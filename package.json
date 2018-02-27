@@ -1,0 +1,26 @@
+{
+  "name": "sorts",
+  "version": "0.0.1",
+  "description": "Different types of sorts with their complexity and best/worst case scenarios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalalayan1/sorts.git"
+  },
+  "keywords": [
+    "bubbleSort",
+    "selectionSort",
+    "insertionSort",
+    "mergeSort",
+    "quickSort"
+  ],
+  "author": "Ayan Dalal <dalalayan1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalalayan1/sorts/issues"
+  },
+  "homepage": "https://github.com/dalalayan1/sorts#readme"
+}
