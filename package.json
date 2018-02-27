@@ -1,6 +1,6 @@
 {
   "name": "sort-types",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Different types of sorts with their complexity and best/worst case scenarios.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dalalayan1/sorts.git"
+    "url": "git+https://github.com/dalalayan1/sort-types.git"
   },
   "keywords": [
     "bubbleSort",
@@ -20,7 +20,7 @@
   "author": "Ayan Dalal <dalalayan1@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dalalayan1/sorts/issues"
+    "url": "https://github.com/dalalayan1/sort-types/issues"
   },
-  "homepage": "https://github.com/dalalayan1/sorts#readme"
+  "homepage": "https://github.com/dalalayan1/sort-types#readme"
 }
