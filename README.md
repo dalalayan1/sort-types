@@ -18,7 +18,7 @@ npm install 'sort-types';
 
 ## If you want to play around, you may use the functions like this - 
 ```
-var { bubbleSort } from 'sort-types';
+import { bubbleSort } from 'sort-types';
 
 bubbleSort([3,1,8,4,2]);
 ```
