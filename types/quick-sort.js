@@ -1,5 +1,14 @@
 
 
+/**
+* partition - Calculates a pivot index for the corresponding sub-array
+*             in such a way that the elements left of it are lesser and right of it are greater.
+*
+* @param {array} array of integers
+* @param {number} start index
+* @param {number} end index
+* @returns {number}  pivot index
+*/
 const partition = function(arr, start, end) {
 
     if (start < end) {
@@ -25,6 +34,22 @@ const partition = function(arr, start, end) {
     }
 }
 
+
+/**
+* quickSort - Sorts the array by using divide-n-conquer(recursion) algo.
+*             First finds a partition index, and then recursively calls itself
+*             with the 2 sub-arrays formed before and after the partition index.
+* Time complexity - 
+*      Best case - O(nlogn)
+*      Worst case - O(nlogn)
+*      Average case - O(n^2)
+* Space complexity - O(n)
+*
+* @param {array} array of integers
+* @param {number} start index
+* @param {number} end index
+* @returns {array}  sorted array
+*/
 const quickSort = function(arr, start, end) {
     if (!start) {
         start = 0;

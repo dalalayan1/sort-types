@@ -1,3 +1,15 @@
+/**
+ * bubbleSort - Sorts the array by swapping the cuurent element with the next,
+ *              if the next element is smaller, until the largest element
+ *              bubbles up to the last position of that iteration/pass.
+ * Time complexity - 
+ *      Best case - O(n)
+ *      Worst case - O(n^2)
+ *      Average case - O(n^2) 
+ *
+ * @param {array} array of integers
+ * @returns {array}  sorted array
+ */
 const bubbleSort = function(arr) {
     var arrLength = arr.length;
 

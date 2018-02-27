@@ -3,7 +3,7 @@
 Different types of sorts with their complexity and best/worst case scenarios.
 
 
-## Explains the following types of sorts - 
+## Has the following types of sorts
     * bubbleSort
     * selectionSort
     * insertionSort
@@ -16,10 +16,17 @@ Different types of sorts with their complexity and best/worst case scenarios.
 npm install 'sort-types';
 ```
 
-## If you want to play around, you may use the functions like this - 
+## If you want to play around, you may use the functions like this 
 ```
 import { bubbleSort } from 'sort-types';
 
 bubbleSort([3,1,8,4,2]);
 ```
 
+## Few upcoming sorts
+    * Radix sort
+    * Bucket sort
+    * Heap sort
+
+## Known issues
+The merge-sort is not implemented properly. It is still WIP.
