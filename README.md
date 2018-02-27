@@ -4,11 +4,11 @@ Different types of sorts with their complexity and best/worst case scenarios.
 
 
 ## Has the following types of sorts
-    * bubbleSort
-    * selectionSort
-    * insertionSort
-    * mergeSort
-    * quickSort
+    * Bubble sort
+    * Selection sort
+    * Insertion sort
+    * Merge sort
+    * Quick sort
 
 
 ## Install
