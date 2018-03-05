@@ -3,59 +3,55 @@
 * merge - Creates an empty array, and keeps pushing the elements of the
 *         2 sub-arrays(before and after middle index) into the array.
 *
-* @param {array} array of integers
-* @param {number} start index
-* @param {number} end index
+* @param {array} left sub-array
+* @param {array} right sub-array
+*
 * @returns {array}  merged sorted array
 */
-const merge = function(arr, start, end) {
+const merge = function(leftArr,rightArr) {
 
-    var midIdx = Math.floor((start + end) / 2),
-        i = start,
-        j = midIdx + 1,
+    var i = 0,
+        j = 0,
+        leftArrLength = leftArr.length,
+        rightArrLength = rightArr.length,
         finalArr = [];
 
-    while (i <= midIdx && j <= end) {
+    while (i < leftArrLength && j < rightArrLength) {
 
-        if (arr[i] < arr[j]) {
+        if (leftArr[i] < rightArr[j]) {
 
-            finalArr.push(arr[i]);
+            finalArr.push(leftArr[i]);
             i++;
         }
-        else if (arr[i] > arr[j]) {
+        else if (leftArr[i] > rightArr[j]) {
 
-            finalArr.push(arr[j]);
+            finalArr.push(rightArr[j]);
             j++;
         }
         else {
-
-            finalArr.push(arr[i]);
+            finalArr.push(leftArr[i]);
             i++;
             j++;
         }
     }
-    if (i < midIdx) {
+    if (i < leftArrLength) {
 
-        while (i < midIdx) {
+        while (i < leftArrLength) {
 
-            finalArr.push(arr[i]);
+            finalArr.push(leftArr[i]);
             i++;
         }
     }
-    else if (j < end) {
+    else if (j < rightArrLength) {
 
-        while (j < end) {
+        while (j < rightArrLength) {
 
-            finalArr.push(arr[j]);
+            finalArr.push(rightArr[j]);
             j++;
         }
     }
 
-    arr.forEach(function (ele, idx) {
-        ele = finalArr[idx];
-    });
-
-    return arr;
+    return finalArr;
 }
 
 
@@ -69,29 +65,23 @@ const merge = function(arr, start, end) {
 *      Average case - O(nlogn)
 *
 * @param {array} array of integers
-* @param {number} start index
-* @param {number} end index
+*
 * @returns {array}  sorted array
 */
-const mergeSort = function(arr, start, end) {
-    if (!start) {
-        start = 0;
-    }
-    
-    if (!end) {
-        end = arr.length - 1;
-    }
+const mergeSort = function(arr) {
 
-    if (start >= end) {
+    if (arr.length <= 1) {
         return;
     }
+    
+    var midIdx = Math.floor(arr.length/2),
+        leftSubArr = arr.slice(0,midIdx),
+        rightSubArr = arr.slice(midIdx,arr.length);
 
-    var arrLength = arr.length,
-        midIndex = Math.floor((start + end) / 2);
+    var sortedLeftSubArr = mergeSort(leftSubArr),
+        sortedRightSubArr = mergeSort(rightSubArr);
 
-    mergeSort(arr, start, midIndex);
-    mergeSort(arr, midIndex + 1, end);
-    return merge(arr, start, end);
+    return merge(sortedLeftSubArr,sortedRightSubArr);
 
 }
 
