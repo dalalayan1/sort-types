@@ -7,6 +7,7 @@
 * @param {array} array of integers
 * @param {number} start index
 * @param {number} end index
+*
 * @returns {number}  pivot index
 */
 const partition = function(arr, start, end) {

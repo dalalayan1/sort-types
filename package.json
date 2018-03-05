@@ -1,6 +1,6 @@
 {
   "name": "sort-types",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Different types of sorts with their complexity and best/worst case scenarios.",
   "main": "index.js",
   "scripts": {

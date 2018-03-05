@@ -8,6 +8,7 @@
 *      Average case - O(n^2) 
 *
 * @param {array} array of integers
+*
 * @returns {array}  sorted array
 */
 const insertionSort = function(arr) {
