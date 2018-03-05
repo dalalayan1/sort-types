@@ -28,5 +28,8 @@ bubbleSort([3,1,8,4,2]);
     * Bucket sort
     * Heap sort
 
-## Known issues
-The merge-sort is not implemented properly. It is still WIP.
+
+## FYI
+
+If you are wondering, how does <b>sort()</b> works,<br>
+it actually does <b>quick-sort</b> when converted to C++.
